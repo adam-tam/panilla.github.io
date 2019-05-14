@@ -1,0 +1,766 @@
+h1{
+  font-family: Righteous;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+a { text-decoration: none; color: rgba(255, 255, 255, 0.7);}
+a:visited { text-decoration: none; color: rgba(255, 255, 255, 0.7);}
+a:hover { text-decoration: none; color: rgba(255, 255, 255, 0.7);}
+a:focus { text-decoration: none; color: rgba(255, 255, 255, 0.7); }
+a:hover, a:active { text-decoration: none; color: rgba(255, 255, 255, 0.7);}
+
+html{
+  scroll-behavior: smooth;
+  font-family: Nunito;
+  font-size: 18px;
+}
+
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  background-image: url("mountainrange.jpg");
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.interactivetooltip{
+  position: absolute;
+  background-color: grey;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 0.1%;
+  float: left;
+  transition: 0.6s;
+  top: 400px;
+  left: 50px;
+}
+
+.interactivetooltip:hover {
+  transform: scale(1.2);
+  background-color: green;
+}
+
+.navigation1{
+  animation-name: navigation1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+}
+
+nav {
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+  background: #ddd;
+  border-radius: 5px;
+}
+nav > ul > li {
+  float: left;
+  width: 200px;
+  height: 65px;
+  line-height: 65px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+nav > ul > li:hover {
+  background: #d5d5d5;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+ul.dropmenu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  text-decoration: none;
+  padding: 0;
+}
+ul.dropmenu li {
+  background: #666;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+}
+ul.dropmenu li:hover {
+  background: #606060;
+  text-decoration: none;
+}
+ul.dropmenu li:last-child {
+  border-radius: 0px 0px 5px 5px;
+  text-decoration: none;
+}
+
+ul.dropmenu li {
+  display: none;
+  text-decoration: none;
+}
+
+li:hover > ul.dropmenu li {
+  display: block;
+  text-decoration: none;
+}
+
+li:hover > ul.dropmenu.menu1 {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+li:hover > ul.dropmenu.menu1 li {
+  opacity: 0;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(1) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(2) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(3) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(4) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 1600ms;
+          animation-duration: 1600ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(5) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(6) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 2400ms;
+          animation-duration: 2400ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+li:hover > ul.dropmenu.menu1 li:nth-child(7) {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+  -webkit-animation-duration: 2800ms;
+          animation-duration: 2800ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes menu1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg) translateY(30px);
+            transform: rotateY(-90deg) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg) translateY(0px);
+            transform: rotateY(0deg) translateY(0px);
+  }
+}
+
+@keyframes menu1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg) translateY(30px);
+            transform: rotateY(-90deg) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg) translateY(0px);
+            transform: rotateY(0deg) translateY(0px);
+  }
+}
+
+.forcefont {
+  font-family: Nunito;
+  font-size: 18px;
+}
+
+.title{
+  font-family: Exo;
+  font-size: 600px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.dropdown{
+  transition: 0.3s;
+  width: 20%;
+  left: 80%
+}
+.div1 span {
+  background-color: darkorange;
+  position: relative;
+  animation-name: div1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.23,.58,.41,.98);
+  border-radius: 10px;
+  border-color: white;
+  padding: 10px;
+}
+
+.border {
+  color: black;
+  padding: 0.3%;
+  background-color: lightblue;
+  border-radius: 6px;
+  width:600px;
+  transition: 0.3s;
+}
+
+.border:hover {
+    background-color: pink;
+    transform: scale(1.1);
+}
+
+.aone {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.atwo {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.athree {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.afour {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.afive {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.asix {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.aseven {
+  display: inline-block;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-name: fadeinright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+#imageone{
+    position: absolute;
+    top: 820px;
+    left: 655px;
+    border-radius: 10px;
+    z-index: 2;
+    opacity: 0;
+    animation-name: imageone;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagetwo{
+    position: absolute;
+    top: 900px;
+    left:780px;
+    z-index: 3;
+    border-radius: 12px;
+    opacity: 0;
+    animation-name: imagetwo;
+    animation-delay: 0.2s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagethree{
+    position: absolute;
+    top: 760px;
+    left:835px;
+    border-radius: 12px;
+    opacity: 0;
+    animation-name: imagethree;
+    animation-delay: 0.4s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagefour{
+    position: absolute;
+    top: 1300px;
+    left:600px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagefour;
+    animation-delay: 0s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagefive{
+    position: absolute;
+    top: 1100px;
+    left:900px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagefive;
+    animation-delay: 0.1s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+#imagesix{
+    position: absolute;
+    top: 1500px;
+    left:650px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagesix;
+    animation-delay: 0.2s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+#imageseven{
+    position: absolute;
+    top: 1350px;
+    left:1300px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imageseven;
+    animation-delay: 0.25s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imageeight{
+    position: absolute;
+    top: 1200px;
+    left:700px;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 12px;
+    animation-name: imageeight;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagenine{
+    position: absolute;
+    top: 1900px;
+    left:900px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagenine;
+    animation-delay: 0.0s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+#imageten{
+    position: absolute;
+    top: 2080px;
+    left:1000px;
+    z-index: 3;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imageten;
+    animation-delay: 0.2s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+#imageeleven{
+    position: absolute;
+    top: 1820px;
+    left:1100px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imageeleven;
+    animation-delay: 0.25s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagetwelve{
+    position: absolute;
+    top: 2050px;
+    left:700px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagetwelve;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagethirteen{
+    position: absolute;
+    top: 2625px;
+    left:800px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagethirteen;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagefourteen{
+    position: absolute;
+    top: 3450px;
+    left:800px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagefourteen;
+    animation-delay: 0s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagefifteen{
+    position: absolute;
+    top: 4000px;
+    left:1150px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagefifteen;
+    animation-delay: 0.1s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagesixteen{
+    position: absolute;
+    top: 3900px;
+    left:800px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagesixteen;
+    animation-delay: 0.2s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imageseventeen{
+    position: absolute;
+    top: 4000px;
+    left:700px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imageseventeen;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imageeighteen{
+    position: absolute;
+    top: 4870px;
+    left:600px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imageeighteen;
+    animation-delay: 0.2s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+#imagenineteen{
+    position: absolute;
+    top: 4800px;
+    left:1000px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 12px;
+    animation-name: imagenineteen;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.33,1.24,.46,1.06);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition: 0.5s;
+}
+
+img {
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+img:hover{
+  transform: scale(0.9) rotate(10deg);
+
+}
+
+@keyframes div1 {
+  0% {opacity: 0; top:50px;letter-spacing: 20px;}
+  100% {opacity: 1; top:0px; letter-spacing: normal;}
+}
+
+@keyframes fadeinright {
+  0% {opacity: 0; left: 30%;}
+  100% {opacity: 1; left:2%;}
+}
+
+@keyframes imageone {
+  0% {opacity: 0; left: 1200px;}
+  100% {opacity: 1; left:655px;}
+}
+
+@keyframes imagetwo {
+  0% {opacity: 0; left: 1300px;}
+  100% {opacity: 1; left:780px;}
+}
+
+@keyframes imagethree {
+  0% {opacity: 0; top: 0%;}
+  100% {opacity: 1; top:760px;}
+}
+
+@keyframes imagefour {
+  0% {opacity: 0; left: 1200px;}
+  100% {opacity: 1; left:600px;}
+}
+
+@keyframes imagefive {
+  0% {opacity: 0; top: 1300px;}
+  100% {opacity: 1; top:1100px;}
+}
+
+@keyframes imagesix {
+  0% {opacity: 0; left: 0px;}
+  100% {opacity: 1; left:650px;}
+}
+
+@keyframes imageseven {
+  0% {opacity: 0; top: 1800px;}
+  100% {opacity: 1; top:1350px;}
+}
+
+@keyframes imageeight {
+  0% {opacity: 0; top: 0%;}
+  100% {opacity: 0.8; top:1200px;}
+}
+@keyframes imagenine {
+  0% {opacity: 0; top: 1300px;}
+  100% {opacity: 1; top:1900px;}
+}
+
+@keyframes imageten {
+  0% {opacity: 0; left: 500px;}
+  100% {opacity: 1; left:1000px;}
+}
+
+@keyframes imageeleven {
+  0% {opacity: 0; top: 2500px;}
+  100% {opacity: 1; top:1820px;}
+}
+
+@keyframes imagetwelve {
+  0% {opacity: 0; top: 1500px;}
+  100% {opacity: 1; top:2050px;}
+}
+
+@keyframes imagethirteen {
+  0% {opacity: 0; top: 1900px;}
+  100% {opacity: 1; top:2625px;}
+}
+
+@keyframes imagefourteen {
+  0% {opacity: 0; left: 500px;}
+  100% {opacity: 1; left:800px;}
+}
+
+@keyframes imagefifteen {
+  0% {opacity: 0; top: 2500px;}
+  100% {opacity: 1; top:4100px;}
+}
+
+@keyframes imagesixteen {
+  0% {opacity: 0; left: 500px;}
+  100% {opacity: 1; left:1000px;}
+}
+
+@keyframes imageseventeen {
+  0% {opacity: 0; top: 1900px;}
+  100% {opacity: 1; top:4000px;}
+}
+
+@keyframes imageeighteen {
+  0% {opacity: 0; left: 300px;}
+  100% {opacity: 1; left:700px;}
+}
+
+@keyframes imagenineteen {
+  0% {opacity: 0; left: 1500px;}
+  100% {opacity: 1; left:1000px;}
+}
+
+@keyframes navigation1 {
+  0% {opacity: 0; left: 30%;}
+  100% {opacity: 1; left:2%;}
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
